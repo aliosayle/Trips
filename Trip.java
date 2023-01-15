@@ -13,27 +13,33 @@ public abstract class Trip
         this.basicPrice = basicPrice;
     }
 
-    public String getDepartureCity() {
+    public String getDepartureCity() 
+    {
         return departureCity;
     }
 
-    public void setDepartureCity(String departureCity) {
+    public void setDepartureCity(String departureCity) 
+    {
         this.departureCity = departureCity;
     }
 
-    public String getArrivalCity() {
+    public String getArrivalCity() 
+    {
         return arrivalCity;
     }
 
-    public void setArrivalCity(String arrivalCity) {
+    public void setArrivalCity(String arrivalCity) 
+    {
         this.arrivalCity = arrivalCity;
     }
 
-    public double getBasicPrice() {
+    public double getBasicPrice() 
+    {
         return basicPrice;
     }
 
-    public void setBasicPrice(double basicPrice) {
+    public void setBasicPrice(double basicPrice) 
+    {
         if(basicPrice < 0)
         throw new IllegalArgumentException("Price can't be negative");
         this.basicPrice = basicPrice;
