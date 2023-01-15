@@ -4,7 +4,7 @@ public abstract class Trip
     private String arrivalCity;
     private double basicPrice;
 
-    public trip(String departureCity, String arrivalCity, double basicPrice) throws IllegalArgumentException
+    public Trip(String departureCity, String arrivalCity, double basicPrice) throws IllegalArgumentException
     {
         if(basicPrice < 0)
         throw new IllegalArgumentException("Price can't be negative");
