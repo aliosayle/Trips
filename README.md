@@ -34,8 +34,6 @@ TrainTrip
 + TrainTrip(dc: String, ac: String, bp: double, isVIP: boolean)
 + toString( ): String
 
-Page 2 of 3
-
 C. The TrainTrip class is characterized by a boolean isVIP. This class has:
 • A constructor that initializes all the attributes.
 • DO NOT IMPLEMENT GETTERS AND SETTERS FOR THIS CLASS.
