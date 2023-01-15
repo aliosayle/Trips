@@ -4,6 +4,7 @@ public class TrainTrip extends Trip implements Economical
 
     public TrainTrip(String departureCity, String arrivalCity, double basicPrice, boolean isVIP) {
         
+        super(departureCity, arrivalCity, basicPrice);
         if (basicPrice < 0) {
             throw new IllegalArgumentException("Price should be greater than 0");
         }
