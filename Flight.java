@@ -4,9 +4,7 @@ public class Flight extends Trip implements Economical
 
     public Flight(String seatClass, String departureCity, String arrivalCity, double basicPrice) throws IllegalArgumentException
     {
-        setDepartureCity(departureCity);
-        setArrivalCity(arrivalCity);
-        setBasicPrice(basicPrice);
+        super(departureCity, arrivalCity, basicPrice);
         if(seatClass.equalsIgnoreCase("First class") || seatClass.equalsIgnoreCase("economic"))
             this.seatClass = seatClass;
         else
